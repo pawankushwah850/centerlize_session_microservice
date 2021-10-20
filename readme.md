@@ -3,7 +3,7 @@
 <p>We are using redis server for storing sessions and caching. 
 And to maintaining user authentication we using cookies based session.</p>
 
-<code>
+<pre>
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -16,4 +16,4 @@ CACHES = {
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
-</code>
+<pre/>
